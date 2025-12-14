@@ -1,0 +1,36 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="scissorsGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#C0C0C0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#808080;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="handleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A4A4A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2A2A2A;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Scissors handles -->
+  <ellipse cx="70" cy="60" rx="25" ry="15" fill="url(#handleGradient)" stroke="#1A1A1A" stroke-width="2"/>
+  <ellipse cx="70" cy="140" rx="25" ry="15" fill="url(#handleGradient)" stroke="#1A1A1A" stroke-width="2"/>
+  
+  <!-- Handle holes -->
+  <ellipse cx="70" cy="60" rx="15" ry="8" fill="none" stroke="#1A1A1A" stroke-width="2"/>
+  <ellipse cx="70" cy="140" rx="15" ry="8" fill="none" stroke="#1A1A1A" stroke-width="2"/>
+  
+  <!-- Scissors blades -->
+  <path d="M 95 65 L 160 50 L 165 55 L 100 70 Z" fill="url(#scissorsGradient)" stroke="#606060" stroke-width="2"/>
+  <path d="M 95 135 L 160 150 L 165 145 L 100 130 Z" fill="url(#scissorsGradient)" stroke="#606060" stroke-width="2"/>
+  
+  <!-- Blade edges (sharp part) -->
+  <line x1="100" y1="67" x2="160" y2="52" stroke="#E0E0E0" stroke-width="1"/>
+  <line x1="100" y1="133" x2="160" y2="148" stroke="#E0E0E0" stroke-width="1"/>
+  
+  <!-- Pivot point -->
+  <circle cx="95" cy="100" r="8" fill="url(#handleGradient)" stroke="#1A1A1A" stroke-width="2"/>
+  <circle cx="95" cy="100" r="3" fill="#606060"/>
+  
+  <!-- Connecting rods -->
+  <line x1="70" y1="75" x2="95" y2="100" stroke="url(#handleGradient)" stroke-width="6" stroke-linecap="round"/>
+  <line x1="70" y1="125" x2="95" y2="100" stroke="url(#handleGradient)" stroke-width="6" stroke-linecap="round"/>
+</svg>

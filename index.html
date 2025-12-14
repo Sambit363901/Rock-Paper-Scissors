@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rock paper scissors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Rock Paper Scissors</h1>
+
+    <div class="choices">
+
+      <div class="choice" id="rock">
+        <img src="images/rock.svg" alt="Rock" />
+      </div>
+      <div class="choice" id="paper">
+        <img src="images/paper.svg" alt="Paper" />
+      </div>
+      <div class="choice" id="scissors">
+        <img src="images/scissors.svg" alt="Scissors" />
+      </div>
+
+    </div>
+
+    <!-- Game Arena - Shows current round choices -->
+    <div class="game-arena" id="gameArena" style="display: none;">
+        <div class="player-choice">
+            <h3>You</h3>
+            <div class="choice-display" id="userChoiceDisplay">
+                <img id="userChoiceImg" src="" alt="">
+            </div>
+        </div>
+        
+        <div class="vs-section">
+            <div class="countdown" id="countdown">3</div>
+            <p class="vs-text">VS</p>
+        </div>
+        
+        <div class="computer-choice">
+            <h3>Computer</h3>
+            <div class="choice-display" id="compChoiceDisplay">
+                <img id="compChoiceImg" src="" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="score-board">
+        <div class="score">
+            <p id="user">0</p>
+            <p>user</p>
+        </div>
+         <div class="score">
+            <p id="comp">0</p>
+            <p>comp</p>
+        </div>
+    </div>
+
+    <div class="msg-container">
+        <p id="msg">
+            Choose your move!
+        </p>
+        <button id="resetBtn" class="reset-btn" style="display: none;">Play Again</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
